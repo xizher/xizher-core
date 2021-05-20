@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "ES6",
+    "target": "ESNext",
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./es",
+    "esModuleInterop": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "allowJs": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.js"
+  ]
+}
+// if use alias path
+// // ...
+// "compilerOptions": {
+//   // ...
+//   "paths": {
+//     "~/*" : ["src/*"],
+//     "~hooks/*" : ["src/hooks/*"],
+//     "~cp/*" : ["src/components/*"],
+//     "~services/*" : ["src/services/*"]
+//   }
+//   // ...
+// }
+// // ...
+  

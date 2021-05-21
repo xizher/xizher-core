@@ -6,6 +6,7 @@ exports.Evented = void 0;
  */
 class Evented {
     constructor() {
+        this.declareName = 'Evented';
         /** 监听处理函数存储池 */
         this._eventPool = new Map(); // eslint-disable-line @typescript-eslint/no-explicit-any
     }

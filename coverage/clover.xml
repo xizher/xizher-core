@@ -1,146 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1621522339752" clover="3.2.0">
-  <project timestamp="1621522339752" name="All files">
-    <metrics statements="123" coveredstatements="123" conditionals="54" coveredconditionals="54" methods="21" coveredmethods="21" elements="198" coveredelements="198" complexity="0" loc="123" ncloc="123" packages="3" files="3" classes="3"/>
+<coverage generated="1621558054263" clover="3.2.0">
+  <project timestamp="1621558054264" name="All files">
+    <metrics statements="126" coveredstatements="126" conditionals="54" coveredconditionals="54" methods="21" coveredmethods="21" elements="201" coveredelements="201" complexity="0" loc="126" ncloc="126" packages="3" files="3" classes="3"/>
     <package name="dist.evented">
-      <metrics statements="42" coveredstatements="42" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
+      <metrics statements="43" coveredstatements="43" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
       <file name="evented.js" path="C:\usr\y2021\xizher\xizher-core\dist\evented\evented.js">
-        <metrics statements="42" coveredstatements="42" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
+        <metrics statements="43" coveredstatements="43" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
         <line num="3" count="1" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
-        <line num="11" count="11" type="stmt"/>
-        <line num="19" count="18" type="stmt"/>
-        <line num="20" count="18" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="16" type="stmt"/>
-        <line num="23" count="18" type="stmt"/>
-        <line num="24" count="18" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="34" count="12" type="stmt"/>
-        <line num="35" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="36" count="2" type="stmt"/>
-        <line num="38" count="10" type="stmt"/>
-        <line num="39" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="40" count="2" type="stmt"/>
-        <line num="42" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="43" count="2" type="stmt"/>
-        <line num="44" count="2" type="stmt"/>
-        <line num="46" count="6" type="stmt"/>
-        <line num="47" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="48" count="6" type="stmt"/>
-        <line num="58" count="76" type="stmt"/>
-        <line num="59" count="76" type="cond" truecount="2" falsecount="0"/>
-        <line num="60" count="40" type="stmt"/>
-        <line num="62" count="36" type="stmt"/>
-        <line num="63" count="36" type="stmt"/>
-        <line num="64" count="36" type="cond" truecount="2" falsecount="0"/>
-        <line num="65" count="9" type="stmt"/>
-        <line num="67" count="27" type="stmt"/>
-        <line num="71" count="27" type="stmt"/>
-        <line num="72" count="29" type="stmt"/>
-        <line num="73" count="29" type="stmt"/>
-        <line num="74" count="29" type="cond" truecount="2" falsecount="0"/>
-        <line num="75" count="3" type="stmt"/>
-        <line num="76" count="3" type="stmt"/>
-        <line num="86" count="1" type="stmt"/>
-        <line num="87" count="1" type="stmt"/>
-        <line num="88" count="1" type="stmt"/>
-        <line num="89" count="1" type="stmt"/>
-        <line num="91" count="1" type="stmt"/>
-        <line num="94" count="1" type="stmt"/>
-        <line num="95" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="es.evented">
-      <metrics statements="41" coveredstatements="41" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
-      <file name="evented.js" path="C:\usr\y2021\xizher\xizher-core\es\evented\evented.js">
-        <metrics statements="41" coveredstatements="41" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="11" count="11" type="stmt"/>
-        <line num="19" count="18" type="stmt"/>
-        <line num="20" count="18" type="cond" truecount="2" falsecount="0"/>
-        <line num="21" count="16" type="stmt"/>
-        <line num="23" count="18" type="stmt"/>
-        <line num="24" count="18" type="stmt"/>
-        <line num="25" count="3" type="stmt"/>
-        <line num="34" count="12" type="stmt"/>
-        <line num="35" count="12" type="cond" truecount="2" falsecount="0"/>
-        <line num="36" count="2" type="stmt"/>
-        <line num="38" count="10" type="stmt"/>
-        <line num="39" count="10" type="cond" truecount="2" falsecount="0"/>
-        <line num="40" count="2" type="stmt"/>
-        <line num="42" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="43" count="2" type="stmt"/>
-        <line num="44" count="2" type="stmt"/>
-        <line num="46" count="6" type="stmt"/>
-        <line num="47" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="48" count="6" type="stmt"/>
-        <line num="58" count="76" type="stmt"/>
-        <line num="59" count="76" type="cond" truecount="2" falsecount="0"/>
-        <line num="60" count="40" type="stmt"/>
-        <line num="62" count="36" type="stmt"/>
-        <line num="63" count="36" type="stmt"/>
-        <line num="64" count="36" type="cond" truecount="2" falsecount="0"/>
-        <line num="65" count="9" type="stmt"/>
-        <line num="67" count="27" type="stmt"/>
-        <line num="71" count="27" type="stmt"/>
-        <line num="72" count="29" type="stmt"/>
-        <line num="73" count="29" type="stmt"/>
-        <line num="74" count="29" type="cond" truecount="2" falsecount="0"/>
-        <line num="75" count="3" type="stmt"/>
-        <line num="76" count="3" type="stmt"/>
-        <line num="86" count="1" type="stmt"/>
-        <line num="87" count="1" type="stmt"/>
-        <line num="88" count="1" type="stmt"/>
-        <line num="89" count="1" type="stmt"/>
-        <line num="91" count="1" type="stmt"/>
-        <line num="95" count="1" type="stmt"/>
-        <line num="96" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.evented">
-      <metrics statements="40" coveredstatements="40" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
-      <file name="evented.ts" path="C:\usr\y2021\xizher\xizher-core\src\evented\evented.ts">
-        <metrics statements="40" coveredstatements="40" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="9" count="11" type="stmt"/>
+        <line num="10" count="11" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
         <line num="20" count="18" type="stmt"/>
         <line num="21" count="18" type="cond" truecount="2" falsecount="0"/>
         <line num="22" count="16" type="stmt"/>
         <line num="24" count="18" type="stmt"/>
         <line num="25" count="18" type="stmt"/>
         <line num="26" count="3" type="stmt"/>
-        <line num="39" count="12" type="stmt"/>
-        <line num="40" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="12" type="stmt"/>
+        <line num="36" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="39" count="10" type="stmt"/>
+        <line num="40" count="10" type="cond" truecount="2" falsecount="0"/>
         <line num="41" count="2" type="stmt"/>
-        <line num="43" count="10" type="stmt"/>
-        <line num="44" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="43" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="2" type="stmt"/>
         <line num="45" count="2" type="stmt"/>
-        <line num="47" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="47" count="6" type="stmt"/>
+        <line num="48" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="6" type="stmt"/>
+        <line num="59" count="76" type="stmt"/>
+        <line num="60" count="76" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="40" type="stmt"/>
+        <line num="63" count="36" type="stmt"/>
+        <line num="64" count="36" type="stmt"/>
+        <line num="65" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="9" type="stmt"/>
+        <line num="68" count="27" type="stmt"/>
+        <line num="72" count="27" type="stmt"/>
+        <line num="73" count="29" type="stmt"/>
+        <line num="74" count="29" type="stmt"/>
+        <line num="75" count="29" type="cond" truecount="2" falsecount="0"/>
+        <line num="76" count="3" type="stmt"/>
+        <line num="77" count="3" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="89" count="1" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="95" count="1" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="es.evented">
+      <metrics statements="42" coveredstatements="42" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
+      <file name="evented.js" path="C:\usr\y2021\xizher\xizher-core\es\evented\evented.js">
+        <metrics statements="42" coveredstatements="42" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="10" count="11" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="20" count="18" type="stmt"/>
+        <line num="21" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="16" type="stmt"/>
+        <line num="24" count="18" type="stmt"/>
+        <line num="25" count="18" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+        <line num="36" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="39" count="10" type="stmt"/>
+        <line num="40" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="41" count="2" type="stmt"/>
+        <line num="43" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="47" count="6" type="stmt"/>
+        <line num="48" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="49" count="6" type="stmt"/>
+        <line num="59" count="76" type="stmt"/>
+        <line num="60" count="76" type="cond" truecount="2" falsecount="0"/>
+        <line num="61" count="40" type="stmt"/>
+        <line num="63" count="36" type="stmt"/>
+        <line num="64" count="36" type="stmt"/>
+        <line num="65" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="66" count="9" type="stmt"/>
+        <line num="68" count="27" type="stmt"/>
+        <line num="72" count="27" type="stmt"/>
+        <line num="73" count="29" type="stmt"/>
+        <line num="74" count="29" type="stmt"/>
+        <line num="75" count="29" type="cond" truecount="2" falsecount="0"/>
+        <line num="76" count="3" type="stmt"/>
+        <line num="77" count="3" type="stmt"/>
+        <line num="87" count="1" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
+        <line num="89" count="1" type="stmt"/>
+        <line num="90" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
+        <line num="97" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.evented">
+      <metrics statements="41" coveredstatements="41" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
+      <file name="evented.ts" path="C:\usr\y2021\xizher\xizher-core\src\evented\evented.ts">
+        <metrics statements="41" coveredstatements="41" conditionals="18" coveredconditionals="18" methods="7" coveredmethods="7"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="9" count="11" type="stmt"/>
+        <line num="12" count="11" type="stmt"/>
+        <line num="23" count="18" type="stmt"/>
+        <line num="24" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="16" type="stmt"/>
+        <line num="27" count="18" type="stmt"/>
+        <line num="28" count="18" type="stmt"/>
+        <line num="29" count="3" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="43" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="46" count="10" type="stmt"/>
+        <line num="47" count="10" type="cond" truecount="2" falsecount="0"/>
         <line num="48" count="2" type="stmt"/>
-        <line num="49" count="2" type="stmt"/>
-        <line num="51" count="6" type="stmt"/>
-        <line num="52" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="53" count="6" type="stmt"/>
-        <line num="67" count="76" type="stmt"/>
-        <line num="68" count="76" type="cond" truecount="2" falsecount="0"/>
-        <line num="69" count="40" type="stmt"/>
-        <line num="71" count="36" type="stmt"/>
-        <line num="72" count="36" type="stmt"/>
-        <line num="73" count="36" type="cond" truecount="2" falsecount="0"/>
-        <line num="74" count="9" type="stmt"/>
-        <line num="76" count="27" type="stmt"/>
-        <line num="80" count="27" type="stmt"/>
-        <line num="81" count="29" type="stmt"/>
-        <line num="82" count="29" type="stmt"/>
-        <line num="83" count="29" type="cond" truecount="2" falsecount="0"/>
-        <line num="84" count="3" type="stmt"/>
-        <line num="85" count="3" type="stmt"/>
-        <line num="99" count="1" type="stmt"/>
-        <line num="100" count="1" type="stmt"/>
-        <line num="101" count="1" type="stmt"/>
+        <line num="50" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="51" count="2" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="54" count="6" type="stmt"/>
+        <line num="55" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="6" type="stmt"/>
+        <line num="70" count="76" type="stmt"/>
+        <line num="71" count="76" type="cond" truecount="2" falsecount="0"/>
+        <line num="72" count="40" type="stmt"/>
+        <line num="74" count="36" type="stmt"/>
+        <line num="75" count="36" type="stmt"/>
+        <line num="76" count="36" type="cond" truecount="2" falsecount="0"/>
+        <line num="77" count="9" type="stmt"/>
+        <line num="79" count="27" type="stmt"/>
+        <line num="83" count="27" type="stmt"/>
+        <line num="84" count="29" type="stmt"/>
+        <line num="85" count="29" type="stmt"/>
+        <line num="86" count="29" type="cond" truecount="2" falsecount="0"/>
+        <line num="87" count="3" type="stmt"/>
+        <line num="88" count="3" type="stmt"/>
         <line num="102" count="1" type="stmt"/>
+        <line num="103" count="1" type="stmt"/>
         <line num="104" count="1" type="stmt"/>
-        <line num="109" count="1" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="107" count="1" type="stmt"/>
+        <line num="112" count="1" type="stmt"/>
       </file>
     </package>
   </project>

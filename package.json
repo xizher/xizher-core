@@ -1,6 +1,6 @@
 {
   "name": "@xizher/core",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JavaScript核心库",
   "main": "dist/index.js",
   "module": "es/index.js",

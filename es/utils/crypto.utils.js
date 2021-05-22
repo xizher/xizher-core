@@ -1,8 +1,8 @@
-import Utf8 from 'crypto-js/enc-utf8';
-import Base64 from 'crypto-js/enc-base64';
-import Hex from 'crypto-js/enc-hex';
-import Pkcs7 from 'crypto-js/pad-pkcs7';
-import AES from 'crypto-js/aes';
+import Utf8 from '../libs/crypto/enc-utf8';
+import Base64 from '../libs/crypto/enc-base64';
+import Hex from '../libs/crypto/enc-hex';
+import Pkcs7 from '../libs/crypto/pad-pkcs7';
+import AES from '../libs/crypto/aes';
 let STRING_CRYPTO_IV = '5201314';
 let STRING_CRYPTO_KEY = '5201314520131452013145201314';
 export const cryptoUtils = {

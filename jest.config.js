@@ -5,4 +5,9 @@ module.exports = {
     '^.+\\.ts?$': 'ts-jest'
   },
   collectCoverage: true,
+  coveragePathIgnorePatterns: [
+    '/src/libs',
+    '/es/libs',
+    '/dist/libs',
+  ]
 }

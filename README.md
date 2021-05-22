@@ -16,6 +16,7 @@ npm install --save @xizher/core
 - `Accessor` 先辈类
 - `baseUtils` 基础工具集
 - `ext` js原生对象扩展函数
+- `axios` axios二次集成
 
 ## 使用
 

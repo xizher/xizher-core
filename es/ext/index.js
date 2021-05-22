@@ -3,7 +3,7 @@ import extDate from './extensions/date.ext';
 import extNumber from './extensions/number.ext';
 import extString from './extensions/string.ext';
 export { extArray, extDate, extNumber, extString, };
-function ext(_this) {
+export function ext(_this) {
     if (_this instanceof Date) {
         return extDate(_this);
     }

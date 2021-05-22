@@ -14,11 +14,11 @@ export {
   IStringExtension,
 }
 
-function ext (date: Date) : IDateExtension
-function ext (str: string) : IStringExtension
-function ext (num: number) : INumberExtension
-function ext<T> (arr: T[]) : IArrayExtension<T>
-function ext<T> (
+export function ext (date: Date) : IDateExtension
+export function ext (str: string) : IStringExtension
+export function ext (num: number) : INumberExtension
+export function ext<T> (arr: T[]) : IArrayExtension<T>
+export function ext<T> (
   _this: Date | string | number | T[]
 ) : IDateExtension | IStringExtension | INumberExtension | IArrayExtension<T> {
   if (_this instanceof Date) {

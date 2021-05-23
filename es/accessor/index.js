@@ -1,1 +1,2 @@
-export * from './accessor';
+import Accessor from './accessor';
+export default Accessor;

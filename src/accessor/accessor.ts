@@ -1,6 +1,5 @@
-import { Evented } from '../evented'
-import { Watcher } from '../watcher'
-import { IHandle, IWatchHandle } from '../watcher/watcher.interface'
+import Evented from '../evented'
+import { Watcher, IHandle, IWatchHandle } from '../watcher'
 
 export class Accessor<T> extends Evented<T> implements Watcher {
 

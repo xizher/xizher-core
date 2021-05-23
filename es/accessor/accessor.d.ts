@@ -1,6 +1,5 @@
-import { Evented } from '../evented';
-import { Watcher } from '../watcher';
-import { IWatchHandle } from '../watcher/watcher.interface';
+import Evented from '../evented';
+import { Watcher, IWatchHandle } from '../watcher';
 export declare class Accessor<T> extends Evented<T> implements Watcher {
     static observe<T>(cls: T): T;
     readonly declareName = "Accessor";

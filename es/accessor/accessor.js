@@ -1,4 +1,4 @@
-import { Evented } from '../evented';
+import Evented from '../evented';
 export class Accessor extends Evented {
     constructor() {
         super(...arguments);

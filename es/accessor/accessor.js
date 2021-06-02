@@ -1,5 +1,5 @@
-import Evented from '../evented';
-export class Accessor extends Evented {
+import Observable from '../observable';
+export class Accessor extends Observable {
     constructor() {
         super(...arguments);
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment

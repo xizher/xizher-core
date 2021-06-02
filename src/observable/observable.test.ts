@@ -1,4 +1,4 @@
-import Evented from './evented'
+import Observable from './observable'
 
 interface Prop {
   'inc': { value: number },
@@ -6,7 +6,7 @@ interface Prop {
   'change': void
 }
 
-export class TestClass<T extends Prop> extends Evented<T & Prop> {
+export class TestClass<T extends Prop> extends Observable<T & Prop> {
   private _value = 1
   constructor () {
     super()

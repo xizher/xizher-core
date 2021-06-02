@@ -1,5 +1,11 @@
-import Evented from './evented';
-export class TestClass extends Evented {
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TestClass = void 0;
+const observable_1 = __importDefault(require("./observable"));
+class TestClass extends observable_1.default {
     constructor() {
         super();
         this._value = 1;
@@ -19,6 +25,7 @@ export class TestClass extends Evented {
         this.fire('change');
     }
 }
+exports.TestClass = TestClass;
 test('通过on和fire函数绑定和触发监听事件', () => {
     const testObj = new TestClass();
     let count = 0;

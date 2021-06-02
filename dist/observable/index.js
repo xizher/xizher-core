@@ -13,6 +13,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const evented_1 = __importDefault(require("./evented"));
-__exportStar(require("./evented.interface"), exports);
-exports.default = evented_1.default;
+const observable_1 = __importDefault(require("./observable"));
+__exportStar(require("./observable.interface"), exports);
+exports.default = observable_1.default;

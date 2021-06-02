@@ -1,6 +1,6 @@
-import Evented from '../evented';
+import Observable from '../observable';
 import { Watcher, IWatchHandle } from '../watcher';
-export declare class Accessor<T> extends Evented<T> implements Watcher {
+export declare class Accessor<T> extends Observable<T> implements Watcher {
     static observe<T>(cls: T): T;
     readonly declareName = "Accessor";
     /** 观测处理器集合 */

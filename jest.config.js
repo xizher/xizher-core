@@ -7,7 +7,7 @@ module.exports = {
   collectCoverage: true,
   coveragePathIgnorePatterns: [
     '/src/libs',
-    '/es/libs',
-    '/dist/libs',
+    '/es',
+    '/dist',
   ]
 }

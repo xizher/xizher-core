@@ -1,7 +1,7 @@
-import Evented from '../evented'
+import Observable from '../observable'
 import { Watcher, IHandle, IWatchHandle } from '../watcher'
 
-export class Accessor<T> extends Evented<T> implements Watcher {
+export class Accessor<T> extends Observable<T> implements Watcher {
 
   public static observe<T> (cls: T) : T {
     return new Proxy(cls as any, { // eslint-disable-line @typescript-eslint/no-explicit-any

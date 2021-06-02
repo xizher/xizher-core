@@ -11,7 +11,7 @@ npm install --save @xizher/core
 
 ## 目录
 
-- `Evented` 事件者类
+- `Observable` 事件者类
 - `Watcher` 观测者类
 - `Accessor` 先辈类
 - `baseUtils` 基础工具集
@@ -20,9 +20,9 @@ npm install --save @xizher/core
 
 ## 使用
 
-### 事件者类 Evented
+### 事件者类 Observable
 
-事件者类，用以观测监听对象实例产生的事件，参考[leaflet的Evented类](https://leafletjs.com/reference-1.7.1.html#evented)
+事件者类，用以观测监听对象实例产生的事件，参考[leaflet的Observable类](https://leafletjs.com/reference-1.7.1.html#Observable)
 
 | 类成员 | 描述                     |
 | ------ | ------------------------ |
@@ -34,11 +34,11 @@ npm install --save @xizher/core
 使用案例
 
 ```typescript
-import { Evented } from '@xizher/core'
-// import { Evented } from '@xizher/es' // in es
-// import Evented from '@xizher/es/Evented'
-// import { Evented } from '@xizher/dist' // in cmj
-// import Evented from '@xizher/dist/Evented'
+import { Observable } from '@xizher/core'
+// import { Observable } from '@xizher/es' // in es
+// import Observable from '@xizher/es/Observable'
+// import { Observable } from '@xizher/dist' // in cmj
+// import Observable from '@xizher/dist/Observable'
 
 interface Prop {
   'inc': { value: number },
@@ -46,7 +46,7 @@ interface Prop {
   'change': void
 }
 
-export class TestClass<T extends Prop> extends Evented<T & Prop> {
+export class TestClass<T extends Prop> extends Observable<T & Prop> {
   private _value = 1
   constructor () {
     super()
@@ -175,7 +175,7 @@ test('watch回调函数的target参数问题', () => {
 
 ### 先辈类 Accessor
 
-实现`Watcher`类的方法，并集成`Evented`类
+实现`Watcher`类的方法，并集成`Observable`类
 
 ### 基础工具集 baseUtils
 

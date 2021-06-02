@@ -1,12 +1,12 @@
 import { IBaseClass } from '../interfaces'
-import { ICallbackFunc, IHandle } from './evented.interface'
+import { ICallbackFunc, IHandle } from './observable.interface'
 
 /**
  * 事件者类，用以观测监听对象实例产生的事件
  */
-export class Evented <T> implements IBaseClass { // eslint-disable-line @typescript-eslint/no-explicit-any
+export class Observable <T> implements IBaseClass { // eslint-disable-line @typescript-eslint/no-explicit-any
 
-  public readonly declareName = 'Evented'
+  public readonly declareName = 'Observable'
 
   /** 监听处理函数存储池 */
   private _eventPool : Map<keyof T, ICallbackFunc<any, string, this>[]> = new Map() // eslint-disable-line @typescript-eslint/no-explicit-any
@@ -109,4 +109,4 @@ export class Evented <T> implements IBaseClass { // eslint-disable-line @typescr
 
 }
 
-export default Evented
+export default Observable

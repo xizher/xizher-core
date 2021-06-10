@@ -1,9 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Observable = void 0;
 /**
  * 事件者类，用以观测监听对象实例产生的事件
  */
-export class Evented {
+class Observable {
     constructor() {
-        this.declareName = 'Evented';
+        this.declareName = 'Observable';
         /** 监听处理函数存储池 */
         this._eventPool = new Map(); // eslint-disable-line @typescript-eslint/no-explicit-any
     }
@@ -88,4 +91,5 @@ export class Evented {
         this.on(key, nfn);
     }
 }
-export default Evented;
+exports.Observable = Observable;
+exports.default = Observable;

@@ -1,10 +1,10 @@
 import { IBaseClass } from '../interfaces';
-import { ICallbackFunc, IHandle } from './evented.interface';
+import { ICallbackFunc, IHandle } from './observable.interface';
 /**
  * 事件者类，用以观测监听对象实例产生的事件
  */
-export declare class Evented<T> implements IBaseClass {
-    readonly declareName = "Evented";
+export declare class Observable<T> implements IBaseClass {
+    readonly declareName = "Observable";
     /** 监听处理函数存储池 */
     private _eventPool;
     /**
@@ -32,4 +32,4 @@ export declare class Evented<T> implements IBaseClass {
      */
     once<K extends keyof T>(name: K, callback: ICallbackFunc<T[K], K, this>): void;
 }
-export default Evented;
+export default Observable;

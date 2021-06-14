@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.throttle = exports.debounce = exports.$extend = exports.loadJs = exports.loadCss = exports.getArrayItemRandom = exports.copyText = exports.isFromMobileBrowser = exports.createIntRandom = exports.createGuid = exports.deepCopy = exports.deepCopyJSON = void 0;
+exports.listToTree = exports.throttle = exports.debounce = exports.$extend = exports.loadJs = exports.loadCss = exports.getArrayItemRandom = exports.copyText = exports.isFromMobileBrowser = exports.createIntRandom = exports.createGuid = exports.deepCopy = exports.deepCopyJSON = void 0;
 /**
  * 深度复制（采用JSON解析方式）
  * @param obj 复制对象
@@ -228,3 +228,31 @@ function throttle(fn, wait, options = { leading: true, trailing: true }) {
     return throttled; // eslint-disable-line @typescript-eslint/no-explicit-any
 }
 exports.throttle = throttle;
+/**
+ * 列表转树形结构
+ * @param list 列表数组
+ * @param options 配置项
+ * @returns 树形结构数组
+ */
+function listToTree(list, options) {
+    const _options = { idField: 'id', parentIdField: 'parentId', checkParentIdCallback: parentId => !!parentId };
+    Object.assign(_options, options ?? {});
+    const map = {};
+    let node, i;
+    const roots = [];
+    for (i = 0; i < list.length; i += 1) {
+        map[list[i][_options.idField]] = i;
+        list[i].children = [];
+    }
+    for (i = 0; i < list.length; i += 1) {
+        node = list[i];
+        if (_options.checkParentIdCallback(node[_options.parentIdField])) {
+            list[map[node[_options.parentIdField]]].children.push(node);
+        }
+        else {
+            roots.push(node);
+        }
+    }
+    return roots;
+}
+exports.listToTree = listToTree;

@@ -93,3 +93,27 @@ test('随机获取数组的其中一个子集', () => {
     expect(arr.includes(baseUtils.getArrayItemRandom(arr))).toBe(true);
     expect(arr.includes(baseUtils.getArrayItemRandom(arr))).toBe(true);
 });
+test('列表转树形结构', () => {
+    const entries = [
+        {
+            'id': '12', 'parentId': '0',
+            'text': 'Man', 'level': '1',
+        }, {
+            'id': '6', 'parentId': '12',
+            'text': 'Boy', 'level': '2',
+        }, {
+            'id': '7', 'parentId': '12',
+            'text': 'Other', 'level': '2',
+        }, {
+            'id': '9', 'parentId': '0',
+            'text': 'Woman', 'level': '1',
+        }, {
+            'id': '11', 'parentId': '9',
+            'text': 'Girl', 'level': '2',
+        }
+    ];
+    const tree = baseUtils.listToTree(entries, { checkParentIdCallback: pid => pid !== '0' });
+    expect(tree.length).toBe(2);
+    // expect(!!(entries[0] as any).children).toBe(false)
+    expect(entries[0].children.length).toBe(2);
+});

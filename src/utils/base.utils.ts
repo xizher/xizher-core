@@ -227,3 +227,34 @@ export function throttle<T extends Function> (fn: T, wait: number, options: { //
   }
   return throttled as any // eslint-disable-line @typescript-eslint/no-explicit-any
 }
+
+/**
+ * 列表转树形结构
+ * @param list 列表数组
+ * @param options 配置项
+ * @returns 树形结构数组
+ */
+export function listToTree<T> (list: T[], options: {
+  idField?: string
+  parentIdField?: string
+  checkParentIdCallback?: (parentId: string) => boolean
+}) : Array<T & { children?: T[] }> {
+  const _options = { idField: 'id', parentIdField: 'parentId', checkParentIdCallback: parentId => !!parentId }
+  Object.assign(_options, options ?? {})
+  const map = {}
+  let node, i
+  const roots = []
+  for (i = 0; i < list.length; i += 1) {
+    map[list[i][_options.idField]] = i
+    ;(list[i] as T & { children?: T[] }).children = []
+  }
+  for (i = 0; i < list.length; i += 1) {
+    node = list[i]
+    if (_options.checkParentIdCallback(node[_options.parentIdField])) {
+      (list[map[node[_options.parentIdField]]] as T & { children?: T[] }).children.push(node)
+    } else {
+      roots.push(node)
+    }
+  }
+  return roots
+}

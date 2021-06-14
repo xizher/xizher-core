@@ -74,3 +74,16 @@ export declare function throttle<T extends Function>(fn: T, wait: number, option
 }): (T & {
     cancle(): void;
 }) | null;
+/**
+ * 列表转树形结构
+ * @param list 列表数组
+ * @param options 配置项
+ * @returns 树形结构数组
+ */
+export declare function listToTree<T>(list: T[], options: {
+    idField?: string;
+    parentIdField?: string;
+    checkParentIdCallback?: (parentId: string) => boolean;
+}): Array<T & {
+    children?: T[];
+}>;

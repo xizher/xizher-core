@@ -1,0 +1,12 @@
+{
+  "name": "@xizher/core",
+  "description": "核心库，集成JavaScript相关工具集及典型的、可复用的代码片段",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^0.14.1"
+  }
+}

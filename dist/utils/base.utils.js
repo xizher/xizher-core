@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.listToTree = exports.throttle = exports.debounce = exports.$extend = exports.loadJs = exports.loadCss = exports.getArrayItemRandom = exports.copyText = exports.isFromMobileBrowser = exports.createIntRandom = exports.createGuid = exports.deepCopy = exports.deepCopyJSON = void 0;
+exports.parseListField = exports.listToTree = exports.throttle = exports.debounce = exports.$extend = exports.loadJs = exports.loadCss = exports.getArrayItemRandom = exports.copyText = exports.isFromMobileBrowser = exports.createIntRandom = exports.createGuid = exports.deepCopy = exports.deepCopyJSON = void 0;
 /**
  * 深度复制（采用JSON解析方式）
  * @param obj 复制对象
@@ -256,3 +256,19 @@ function listToTree(list, options) {
     return roots;
 }
 exports.listToTree = listToTree;
+/**
+ * 解析列表
+ * @param list 列表
+ * @param parseFields 解析字段集
+ * @returns 解析结果列表
+ */
+function parseListField(list, parseFields) {
+    return list.map(item => {
+        const newItem = { ...item };
+        parseFields.forEach(([fromField, toField]) => {
+            newItem[toField] = newItem[fromField];
+        });
+        return newItem;
+    }); // eslint-disable-line @typescript-eslint/no-explicit-any
+}
+exports.parseListField = parseListField;

@@ -258,3 +258,19 @@ export function listToTree<T> (list: T[], options: {
   }
   return roots
 }
+
+/**
+ * 解析列表
+ * @param list 列表
+ * @param parseFields 解析字段集
+ * @returns 解析结果列表
+ */
+export function parseListField <K, T> (list: T[], parseFields: [keyof T, keyof K][]) : K[] {
+  return list.map(item => {
+    const newItem = { ...item } as unknown
+    parseFields.forEach(([fromField, toField]) => {
+      newItem[toField] = newItem[fromField]
+    })
+    return newItem
+  }) as any // eslint-disable-line @typescript-eslint/no-explicit-any
+}

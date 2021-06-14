@@ -87,3 +87,10 @@ export declare function listToTree<T>(list: T[], options: {
 }): Array<T & {
     children?: T[];
 }>;
+/**
+ * 解析列表
+ * @param list 列表
+ * @param parseFields 解析字段集
+ * @returns 解析结果列表
+ */
+export declare function parseListField<K, T>(list: T[], parseFields: [keyof T, keyof K][]): K[];

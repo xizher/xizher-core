@@ -100,3 +100,13 @@ test('列表转树形结构', () => {
   // expect(!!(entries[0] as any).children).toBe(false)
   expect((entries[0] as any).children.length).toBe(2)
 })
+
+test('解析列表', () => {
+  const list = [
+    { a: '1', b: 2 }
+  ]
+  const newList = baseUtils.parseListField<{ A: string, B: number }, typeof list[0]>(list, [
+    ['a', 'A']
+  ])
+  expect(newList[0].A).toBe(list[0].a)
+})

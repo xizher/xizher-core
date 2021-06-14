@@ -240,3 +240,18 @@ export function listToTree(list, options) {
     }
     return roots;
 }
+/**
+ * 解析列表
+ * @param list 列表
+ * @param parseFields 解析字段集
+ * @returns 解析结果列表
+ */
+export function parseListField(list, parseFields) {
+    return list.map(item => {
+        const newItem = { ...item };
+        parseFields.forEach(([fromField, toField]) => {
+            newItem[toField] = newItem[fromField];
+        });
+        return newItem;
+    }); // eslint-disable-line @typescript-eslint/no-explicit-any
+}
